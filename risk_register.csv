@@ -1,2 +1,9 @@
 Finding ID,Risk Statement,Asset,Likelihood (1-5),Impact (1-5),Risk Score,Existing Controls,Recommended Controls,Residual Risk
 
+F-01,Public object storage exposure leads to customer data breach,Object storage and customer data,3,5,15,Basic access controls,Block public access plus encryption plus posture monitoring,Medium
+F-02,Over-permissive IAM increases blast radius for compromised credentials,Cloud IAM and administrative access,3,5,15,Role-based access,Least privilege review plus PAM plus audit alerts,Medium
+F-03,Internet-exposed admin access enables unauthorized system compromise,Compute and administrative interfaces,4,4,16,Security groups,Default deny inbound plus VPN or bastion plus flow log alerts,High
+F-04,Missing centralized logging delays detection and response,Monitoring and audit logs,4,4,16,Partial logging,Central SIEM plus alert use cases plus retention standards,High
+F-05,Weak encryption and key management increases breach impact,Data stores and encryption keys,3,4,12,Some encryption,KMS enforcement plus key rotation plus monitoring,Medium
+F-06,Plain-text secrets enable rapid lateral movement and data access,Secrets and credentials,3,4,12,Manual handling,Secrets manager plus rotation plus secrets scanning,Medium
+F-07,Insufficient backup controls increase downtime and ransomware impact,Backups and recovery systems,3,4,12,Backups enabled,Immutable backups plus restore testing plus deletion alerts,Medium
